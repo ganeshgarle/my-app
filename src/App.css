@@ -5,10 +5,9 @@
   justify-content: center;
 }
 .list-items{
-  margin-left: 18rem;
+  /* margin-left: 10rem; */
 }
 .items{
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
