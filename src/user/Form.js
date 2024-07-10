@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { ButtonNew } from "../component";
 import { Spinner } from "reactstrap";
 import { useCount, useUsers } from "../hooks";
