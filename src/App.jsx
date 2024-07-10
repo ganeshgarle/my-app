@@ -1,23 +1,23 @@
-import { useState } from "react";
 import "./App.css";
-import Form from "./component/Form";
+import { ButtonNew } from "./component";
+import Form from "./user/Form";
+import { useCount } from "./hooks";
 
 const MyButton = ({ increment, count }) => {
-  return <button onClick={increment}>{count} Coutner</button>;
+  return (
+    <ButtonNew className="btn-sm " color="danger" onClick={increment}>
+      {count} Count
+    </ButtonNew>
+  );
 };
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  const increment = () => {
-    const value = count + 1;
-    setCount(value);
-  };
+  const { count, increment } = useCount();
 
   return (
     <div>
       <Form />
-      <MyButton increment={increment} count={count} />
-      <MyButton increment={increment} count={count} />
+      {/* <MyButton increment={increment} count={count} /> */}
     </div>
   );
 };
