@@ -1,3 +1,4 @@
 import useCount from "./useCount";
 import useUsers from "./useUsers";
-export { useCount, useUsers };
+import useDebounce from "./useDebounce";
+export { useCount, useUsers, useDebounce };
